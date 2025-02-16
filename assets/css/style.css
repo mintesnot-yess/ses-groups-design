@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    transition: all .5s;
+
+}
+
+@keyframes nav-bg-opacity {
+
+    to {
+        background: #002a46c7;
+
+    }
+
+
+}
+
+@keyframes fixed-animation {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+}
+
+@keyframes scrollY-animation {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+
+}
+
+@keyframes scrollX-animation {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+
+}
+
+.fixed-animation {
+    animation: fixed-animation .6s;
+}
+
+.fixed-animation1 {
+    animation: fixed-animation 1s;
+}
+
+.scrollY-animation {
+    animation: scrollY-animation;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.scrollX-animation {
+    animation: scrollX-animation;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow: hidden auto;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    background: #172941;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #1e67c0cb;
+}
+
+.nav-animation {
+    background: #002e4d00;
+    animation: nav-bg-opacity;
+    animation-timeline: scroll();
+}
+
+.blue-gray {
+    background: #002a46c7;
+
+}
+
+.hero {
+    h1 {
+        font-family: 'Urbanist', serif;
+    }
+}
