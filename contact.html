@@ -62,8 +62,9 @@
         <section class="flex flex-col md:flex-row min-h-screen mt-12 md:mt-0">
             <div class="bg-gray-200 p-8 md:w-1/2 flex flex-col justify-center">
                 <h1 class="text-black text-4xl font-bold mb-4">Get in touch</h1>
-                <p class="text-gray-600 mb-8">Proin volutpat consequat porttitor cras nullam gravida at. Orci molestie a
-                    eu arcu. Sed ut tincidunt integer elementum id sem. Arcu sed malesuada et magna.</p>
+                <p class="text-gray-600 mb-8">SES Groups is a specialized engineering services company providing
+                    high-quality solutions in engineering, consulting, and project management. We focus on innovation,
+                    efficiency, and reliability to meet the needs of our clients.</p>
                 <div class="flex items-center mb-4">
                     <i class="fas fa-map-marker-alt text-gray-600 text-xl mr-4"></i>
                     <div>
@@ -72,41 +73,37 @@
                 </div>
                 <div class="flex items-center mb-4">
                     <i class="fas fa-phone-alt text-gray-600 text-xl mr-4"></i>
-                    <p class="text-gray-800">+2519 123456</p>
+                    <p class="text-gray-800"><a class="hover:underline" href="tel:+251973775243"> +251 973775243 <i
+                                class="fa-solid fa-up-right-from-square ml-1"></i> </a></p>
                 </div>
                 <div class="flex items-center">
                     <i class="fas fa-envelope text-gray-600 text-xl mr-4"></i>
-                    <p class="text-gray-800">hello@example.com</p>
+                    <p class="text-gray-800"><a class="hover:underline" href="mailto:Info@ ses-groups.com">Info@
+                            ses-groups.com <i class="fa-solid fa-up-right-from-square  ml-1"></i></a></p>
                 </div>
             </div>
             <div class="bg-white p-8 md:w-1/2 flex flex-col justify-center">
                 <form action="#" method="POST" class="space-y-6">
-                    <div class="flex space-x-4">
-                        <div class="w-1/2">
-                            <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
-                            <input type="text" id="first-name" name="first-name"
-                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
-                        </div>
-                        <div class="w-1/2">
-                            <label for="last-name" class="block text-sm font-medium text-gray-700">Last name</label>
-                            <input type="text" id="last-name" name="last-name"
-                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
-                        </div>
+                    <div>
+                        <label for="first-name" class="block text-sm font-medium text-gray-700">First name</label>
+                        <input type="text" id="first-name" name="first-name"
+                            class="mt-1 block w-full border text-gray-600 border-gray-300 rounded-md shadow-sm p-2">
                     </div>
+
                     <div>
                         <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
                         <input type="email" id="email" name="email"
-                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                            class="mt-1 block w-full border border-gray-300 text-gray-600 rounded-md shadow-sm p-2">
                     </div>
                     <div>
-                        <label for="phone" class="block text-sm font-medium text-gray-700">Phone number</label>
-                        <input type="tel" id="phone" name="phone"
-                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2">
+                        <label for="subject" class="block text-sm font-medium text-gray-700"> Subject </label>
+                        <input type="text" id="subject" name="subject"
+                            class="mt-1 block w-full border border-gray-300  text-gray-600 rounded-md shadow-sm p-2">
                     </div>
                     <div>
                         <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
                         <textarea id="message" name="message" rows="4"
-                            class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2"></textarea>
+                            class="mt-1 block w-full border border-gray-300 text-gray-600 rounded-md shadow-sm p-2"></textarea>
                     </div>
                     <div>
                         <button type="submit"
@@ -194,7 +191,7 @@
             </div>
             <div class="mt-8 border-t border-gray-200 pt-8">
                 <p class="text-gray-500 text-center">
-                    © 2025 Your Company, Inc. All rights reserved.
+                    © <span id="year"> </span> SES Groups All rights reserved.
                 </p>
             </div>
         </div>
